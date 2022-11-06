@@ -8,3 +8,8 @@ resource "aws_s3_bucket" "codepipeline_artifacts1" {
   acl = "private"
 }
 
+resource "aws_s3_bucket" "codepipeline_artifacts2" {
+  bucket = "pipeline-dev-jmonicam1-cr3"
+  acl = "private"
+}
+
