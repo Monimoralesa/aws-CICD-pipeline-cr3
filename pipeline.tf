@@ -70,7 +70,7 @@ resource "aws_codepipeline" "cicd_pipeline" {
             output_artifacts = ["tf-code"]
             configuration = {
                 FullRepositoryId = " Monimoralesa/aws-CICD-pipeline-cr3 "
-                BranchName   = "master"
+                BranchName   = "main"
                 ConnectionArn = var.codepipeline_connection_credentials
                 OutputArtifactFormat = "CODE_ZIP"
             }
